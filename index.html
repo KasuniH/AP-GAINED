@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP-GAINED</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #daeaf1; /* Updated background color for the whole page */
+        }
+        .header-navbar {
+            background-color: #daeaf1; /* Updated background color for the navigation bar */
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .header-navbar .logo-container {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .header-navbar img {
+            height: 50px;
+            margin: 5px 10px;
+        }
+        .header-navbar .navbar {
+            display: flex;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            margin-left: auto;
+        }
+        .header-navbar .navbar a {
+            display: block;
+            color: #000; /* Adjusted text color for better contrast */
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+            position: relative; /* Needed for dropdown positioning */
+        }
+        .header-navbar .navbar a:hover {
+            background-color: #ccc; /* Slightly darker hover effect */
+            color: #000;
+        }
+        .navbar .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .navbar .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #daeaf1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .navbar .dropdown-content a {
+            color: #000;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .navbar .dropdown-content a:hover {
+            background-color: #ccc;
+        }
+        .navbar .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .container {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #daeaf1; /* Updated background color for the container */
+            color: #334e68;
+        }
+        .title-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .title-container img {
+            width: 100px; /* Adjust width as needed */
+            height: auto;
+            margin: 0 20px; /* Space between images and the title */
+        }
+        .title-container h1 {
+            font-size: 4em;
+            color: #334e68;
+            margin: 0;
+        }
+        .container p {
+            font-size: 1.5em;
+            color: #d9534f;
+            margin-top: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-navbar .navbar a {
+                font-size: 16px;
+                padding: 10px 15px;
+            }
+            .title-container h1 {
+                font-size: 3em;
+            }
+            .title-container img {
+                width: 80px; /* Adjust width for smaller screens */
+            }
+            .container p {
+                font-size: 1.25em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-navbar .navbar a {
+                font-size: 14px;
+                padding: 8px 10px;
+            }
+            .title-container h1 {
+                font-size: 2.5em;
+            }
+            .title-container img {
+                width: 60px; /* Adjust width for smaller screens */
+            }
+            .container p {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-navbar">
+        <div class="logo-container">
+            <img src="data/LEARN - Official Logo.png" alt="LEARN Logo">
+            <img src="data/BdREN-removebg-preview.png" alt="BdREN Logo">
+            <img src="data/apnic-foundation-logo.webp" alt="APNIC Logo">
+            <img src="data/ISIF Logo Aug2022-01.png" alt="ISIF Asia Logo">
+        </div>
+        <div class="navbar">
+            <a href="#home">HOME</a>
+            <div class="dropdown">
+                <a href="#about">ABOUT US</a>
+                <div class="dropdown-content">
+                    <a href="#history">WHAT'S AP-GAINED</a>
+                    <a href="#mission">OUR GOAL</a>
+                    <a href="#team">OUR STRATEGY </a>
+					<a href="#mission">WHO WE ARE?</a>
+                </div>
+            </div>
+            <a href="#news">NEWS & UPDATES</a>
+            <a href="#upcoming">UPCOMING</a>
+            <a href="#gallery">GALLERY</a>
+            <a href="#contact">CONTACT US</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="title-container">
+            <img src="data/3.png" alt="Left Image"> <!-- Replace with your left image -->
+            <h1>AP-GAINED</h1>
+            <img src="data/3.png" alt="Right Image"> <!-- Replace with your right image -->
+        </div>
+        <p>Asia Pacific - Generative AI Integration for<br> National Research & Education Network (NREN)<br> Enhancement & Development</p>
+    </div>
+
+    <script>
+        // JavaScript can be added here for additional interactivity if needed
+    </script>
+
+</body>
+</html>
